@@ -1,0 +1,110 @@
+@import url(common.css);
+
+/*///// Aside Quick Icon */
+
+.aside{
+	position:fixed;
+	bottom:60px; 
+	right:10px;
+	width:48px;
+	height:300px;
+	z-index:2000;
+	overflow:hidden;
+	display: flex;
+	justify-content: center;
+	
+}
+.quickmenu{
+	position:relative; 
+	width:50px;
+	height:300px;
+	z-index:1100;
+	background:#333;
+}
+
+.quickmenu .quick_icon{text-align:center;}
+.quickmenu .quick_icon li{
+	position:absolute;
+	bottom:0;
+	left:2px;
+	/* text-align: center; */
+}
+
+/* Trigger */
+.trigger {
+  width: 45px;
+  height: 45px;
+	margin: auto;
+  background-color: royalblue;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+	bottom:0px; 
+  cursor: pointer;
+  z-index: 100;
+}
+.trigger_btn{
+  /* border: 1px solid #000; */
+  width: 60%;
+  height: 40%;
+  position: relative;
+
+}
+.trigger_btn span{
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+.trigger_btn span:nth-child(1){
+  top: 0;
+}
+.trigger_btn span:nth-child(2){
+  top: 50%;
+}
+.trigger_btn span:nth-child(3){
+  top: 100%;
+}
+
+/* jQuery 에서 trigger클릭시 바뀌는 부분 */
+.trigger_btn.active span{
+  background-color: #fff;
+}
+.trigger_btn.active span:nth-child(1){
+  top: 50%;
+  transform: rotate(45deg);
+  /* transform-origin: right bottom; */
+}
+.trigger_btn.active span:nth-child(2){
+  opacity: 0;
+}
+.trigger_btn.active span:nth-child(3){
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+
+
+/* .quick_toggle{  
+	display:block;
+	position:absolute;
+	bottom:0px; 
+	width:48px;
+	height:46px;
+	background:url(../image/aside_open.png) no-repeat;
+	cursor:pointer;
+	z-index:2000;
+}
+.quick_close{ 
+	display:block;
+	position:absolute;
+	bottom:0px; 
+	width:48px;
+	height:46px;
+	background:url(../image/aside_close.png) no-repeat;
+	cursor:pointer;
+	z-index:2000;
+} */
