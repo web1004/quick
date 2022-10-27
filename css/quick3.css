@@ -19,7 +19,7 @@
 	width:50px;
 	height:300px;
 	z-index:1100;
-	background:#333;
+	/* background:#333; */
 }
 
 .quickmenu .quick_icon{text-align:center;}
