@@ -23,7 +23,7 @@
 }
 
 .quickmenu .quick_icon{text-align:center;}
-.quickmenu .quick_icon li{
+.quickmenu .quick_icon li{  /* 같은 위치로 설정 */
 	position:absolute;
 	bottom:0;
 	left:2px;
@@ -85,26 +85,3 @@
   top: 50%;
   transform: rotate(-45deg);
 }
-
-
-
-/* .quick_toggle{  
-	display:block;
-	position:absolute;
-	bottom:0px; 
-	width:48px;
-	height:46px;
-	background:url(../image/aside_open.png) no-repeat;
-	cursor:pointer;
-	z-index:2000;
-}
-.quick_close{ 
-	display:block;
-	position:absolute;
-	bottom:0px; 
-	width:48px;
-	height:46px;
-	background:url(../image/aside_close.png) no-repeat;
-	cursor:pointer;
-	z-index:2000;
-} */

@@ -28,7 +28,7 @@ header{
 
 /* Header Active Class */
 header.active .lnb-inner{
-  /* display: none; */
+  display: none;
   height: 0;
   overflow: hidden;
 }
