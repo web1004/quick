@@ -67,6 +67,7 @@
   float:right;
 	overflow:hidden;
 	text-align:center;
+  transition: 0.35s;
 }
 #scroll_btn ul li a{
 	color:#fff;
@@ -86,4 +87,12 @@
   text-align:center;
   font-weight:bold;
 	vertical-align:top; 
+}
+#scroll_btn ul li.active{
+  width: 110px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+#scroll_btn ul li.active .scroll_hover{
+  display: inline-block;
 }

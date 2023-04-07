@@ -10,7 +10,7 @@
 	display:block;
 	cursor:pointer;
 }
-.quick_open{   /*close->jquery에서 불러옴*/
+.quick_toggle.quick_open{   /*close->jquery에서 불러옴*/
 	position:fixed; 
 	bottom:0; 
 	right:0; 

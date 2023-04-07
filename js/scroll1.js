@@ -11,7 +11,7 @@ $(document).ready(function(){
   // 따라다니는 퀵메뉴
   $(window).scroll(function(){ //브라우저에 스크롤이 발생하는 순간부터 
 
-    let curpos=$(window).scrollTop()+20;  //스크롤상단 위치값을 저장
+    let curpos=$(this).scrollTop()+20;  //스크롤상단 위치값을 저장
     $(".quick_in").stop().animate({top:curpos});
 
   });

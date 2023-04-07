@@ -2,7 +2,7 @@ $(document).ready(function(){
 	
   $(window).scroll(function(){ //브라우저에 스크롤이 발생하는 순간부터 
 
-    let pos=$(window).scrollTop();  //스크롤상단 위치값을 저장
+    let pos=$(this).scrollTop();  //스크롤상단 위치값을 저장
     $("#QuickBanner").stop().animate({top:pos+350},400);
 
   });
