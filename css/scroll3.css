@@ -88,6 +88,8 @@
   font-weight:bold;
 	vertical-align:top; 
 }
+
+/* jQuery에서 호출 */
 #scroll_btn ul li.active{
   width: 110px;
   border-radius: 25px;
