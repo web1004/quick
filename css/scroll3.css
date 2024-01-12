@@ -43,7 +43,6 @@
 
 
 /*///////// 스크롤시 나오는버튼*/
-
 #scroll_btn{
   width:110px;
   height:auto;
@@ -59,7 +58,7 @@
 	/* background:yellow;  */
 } 
 #scroll_btn ul li{
-  width:35px;   /*jQuery에서 보여지는 가로폭 크게 변경 */
+  width:35px;   
   height:35px;
   border-radius:50%;
   background:#3c75d3;
@@ -82,7 +81,7 @@
 	text-align:right;
 }
 #scroll_btn ul li a .scroll_hover{  /*스크롤위치에 나오는 글자부분*/
-  display:none;  /*jQuery에서 보이게 변경*/
+  display:none; 
   width:70px;
   text-align:center;
   font-weight:bold;

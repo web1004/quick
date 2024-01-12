@@ -7,44 +7,44 @@ $(document).ready(function(){
 
   $(window).scroll(function(){
 
-    let scollpos=$(this).scrollTop();
-    $("#txt1").text(scollpos); 
+    let scrollpos=$(this).scrollTop();
+    $("#txt1").text(scrollpos); 
 
     //스크롤이 350이상일때  TOP버튼,오른쪽 퀵메뉴 보이게 하고 스크롤을 올리면 다시 숨김
-    if(scollpos > 350){
+    if(scrollpos>350){
       $(".top_btn").fadeIn();
       $("#scroll_btn").fadeIn();
     }else{
       $(".top_btn").fadeOut();
       $("#scroll_btn").fadeOut();
-    }
+    };
 
     //scroll 350~799
-    if(scollpos>=350 && scollpos<800){
+    if(scrollpos>=350 && scrollpos<800){
       $("#scroll_btn ul .scb1").addClass("active");
       $("#scroll_btn ul .scb1 a .scroll_hover").addClass("active");
     }else{
       $("#scroll_btn ul .scb1").removeClass("active");
       $("#scroll_btn ul .scb1 a .scroll_hover").removeClass("active");
-    };
+    }
 
     //scroll 800~1599
-    if(scollpos>=800 && scollpos<1600){
+    if(scrollpos>=800 && scrollpos<1600){
       $("#scroll_btn ul .scb2").addClass("active");
       $("#scroll_btn ul .scb2 a .scroll_hover").addClass("active");
     }else{
       $("#scroll_btn ul .scb2").removeClass("active");
-      $("#scroll_btn ul .scb2 a .scroll_hover").removeClass("active");      
-    };
+      $("#scroll_btn ul .scb2 a .scroll_hover").removeClass("active");
+    }
 
     //scroll 1600~2999
-    if(scollpos>=1600 && scollpos<3000){
+    if(scrollpos>=1600 && scrollpos<3000){
       $("#scroll_btn ul .scb3").addClass("active");
       $("#scroll_btn ul .scb3 a .scroll_hover").addClass("active");
     }else{
       $("#scroll_btn ul .scb3").removeClass("active");
-      $("#scroll_btn ul .scb3 a .scroll_hover").removeClass("active");      
-    };
+      $("#scroll_btn ul .scb3 a .scroll_hover").removeClass("active");
+    }
 
   });
 
@@ -59,7 +59,7 @@ $(document).ready(function(){
 		$("body,html").animate({scrollTop:"1800px"},700);
 	});
 
-  //TOP버튼 클릭시 맨위로
+  // TOP버튼
   $(".top_btn").click(function(){
     $("html,body").animate({scrollTop:"0"});
   });
