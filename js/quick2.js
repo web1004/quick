@@ -1,31 +1,18 @@
 $(document).ready(function(){
+  $btnSidebarIcon = $('.btn-sidebar span:nth-child(1)'),
+  $btnSidebarText = $('.btn-sidebar span:nth-child(2)');
 
-  //퀵메뉴 이미지오버
-  $(".quick_icon li").hover(function(){
-    qnum = $(this).index()+1; 
-    $(this).find("a img").attr({"src":"image/rquick_on_0"+qnum+".png"});
-  },function(){ 
-    $(this).find("a img").attr({"src":"image/rquick_0"+qnum+".png"});
-  });  
-
-
-  //animate부분(close/open)
-  qchk=true;
-
-  $(".quick_toggle").click(function(){
-
-    $(this).toggleClass("quick_open");
-
-    if(qchk){
-      $(this).stop().animate({bottom:"370px"},500); 
-      $(".quickmenu").stop().animate({bottom:"0px"},500);
-      qchk=false;
-    }else{
-      $(this).stop().animate({bottom:"0px"},500); 
-      $(".quickmenu").stop().animate({bottom:"-370px"},500); 
-      qchk=true;
+  chk=true;
+  $('.btn-sidebar').click(function(){
+    $('.sidebar-content').toggleClass('active');
+    $btnSidebarIcon.toggleClass('xi-angle-right-thin xi-angle-left-thin');
+    
+    // 텍스트 변경 open을 close로, close를 open으로
+    if(chk) {
+      $btnSidebarText.text('close')
     }
-
+    else {
+      $btnSidebarText.text('open')
+    }
   });
-
 });

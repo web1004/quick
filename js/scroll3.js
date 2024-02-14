@@ -61,7 +61,7 @@ $(document).ready(function(){
 
   // TOP버튼
   $(".top_btn").click(function(){
-    $("html,body").animate({scrollTop:"0"});
+    $("html,body").animate({scrollTop:"0"},800);
   });
 
 });
