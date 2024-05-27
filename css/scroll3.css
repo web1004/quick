@@ -1,4 +1,5 @@
-@import url(common.css);
+@import url(reset.css);
+@import url(font.css);
 
 #txt1{position:fixed;top:10px;right:10px;}  /*스크롤바 위치확인*/
 

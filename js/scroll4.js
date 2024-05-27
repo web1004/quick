@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
   $(window).scroll(function(){
-
     let pos = $(window).scrollTop();
 
     if(pos>50){
@@ -9,7 +8,6 @@ $(document).ready(function(){
     }else{
       $("header, .btn-top").removeClass('active');
     };
-
   });
 
 });

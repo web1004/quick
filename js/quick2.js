@@ -1,18 +1,21 @@
 $(document).ready(function(){
-  $btnSidebarIcon = $('.btn-sidebar span:nth-child(1)'),
-  $btnSidebarText = $('.btn-sidebar span:nth-child(2)');
+  
+  quick=true;
+  $(".trigger_btn").click(function(){
+    $(this).toggleClass("active");
 
-  chk=true;
-  $('.btn-sidebar').click(function(){
-    $('.sidebar-content').toggleClass('active');
-    $btnSidebarIcon.toggleClass('xi-angle-right-thin xi-angle-left-thin');
-    
-    // 텍스트 변경 open을 close로, close를 open으로
-    if(chk) {
-      $btnSidebarText.text('close')
-    }
-    else {
-      $btnSidebarText.text('open')
-    }
+    //상하간격을 고려하여 위치를 잡아줌
+    if(quick){
+      $(".quick_icon .icon5").stop().animate({"bottom":"60px"},500,"easeOutBack");
+      $(".quick_icon .icon4").stop().animate({"bottom":"120px"},500,"easeOutBack");
+			$(".quick_icon .icon3").stop().animate({"bottom":"180px"},500,"easeOutBack");
+			$(".quick_icon .icon2").stop().animate({"bottom":"240px"},500,"easeOutBack");
+			$(".quick_icon .icon1").stop().animate({"bottom":"300px"},500,"easeOutBack");
+      quick = false;
+    }else{
+      $(".quick_icon li").stop(true,true).animate({"bottom":"0px"},200);
+      quick = true;
+    };
   });
+
 });
