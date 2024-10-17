@@ -19,6 +19,7 @@ header .gnb a{
   display: inline-block;
   margin: 0 10px;
 }
+/* 섹션별로 가로세로 FullScreen */
 section {
   height: 100vh;
   background-color: #eee;

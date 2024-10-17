@@ -16,15 +16,12 @@ section p{
 	color: #fff;
 }
 
-
 /* Quick Banner */
-
 #quickBanner {
   position:absolute;
   top:20px;
   left:100%; /*contents가 끝나는 바로 다음에 위치*/
 }
-
 .banner{
 	width: 193px;
 	height: 178px;  

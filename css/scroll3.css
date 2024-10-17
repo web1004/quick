@@ -89,9 +89,9 @@
 	vertical-align:top; 
 }
 
-/* jQuery에서 호출 */
+/* jQuery에서 클래스 생성 및 삭제 */
 #scroll_btn ul li.active{
-  width: 110px;
+  width: 110px; /* 처음 가로값 35px 을 늘려줌 */
   border-radius: 25px;
   transition: 0.3s;
 }

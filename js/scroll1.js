@@ -2,8 +2,8 @@ $(document).ready(function(){
 
   // 따라다니는 퀵메뉴
   $(window).scroll(function(){
-    let scrollPosion=$(this).scrollTop()+50;
-    $(".quick").stop().animate({top:scrollPosion});
+    let scrollPostion = $(this).scrollTop()+50;
+    $(".quick").stop().animate({top:scrollPostion});
   });
 
   // TOP버튼

@@ -1,12 +1,12 @@
 $(document).ready(function(){
 
   $(window).scroll(function(){
-    let pos = $(window).scrollTop();
+    let pos = $(this).scrollTop();
 
     if(pos>50){
-      $("header, .btn-top").addClass('active');
+      $("header, .btn-top").addClass("active");
     }else{
-      $("header, .btn-top").removeClass('active');
+      $("header, .btn-top").removeClass("active");
     };
   });
 

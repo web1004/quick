@@ -1,9 +1,6 @@
 @import url(reset.css);
 @import url(font.css);
 
-@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
-
 header{
   color: #fff;
   text-align: center;
@@ -26,19 +23,6 @@ header{
   height: 80px;
   line-height: 80px;
 }
-
-/* Header Active Class */
-header.active .lnb-inner{
-  display: none;
-  height: 0;
-  overflow: hidden;
-}
-header.active .gnb-inner{
-  background-color: #fff;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
-  color: #000;
-}
-
 .btn-top{
   position: fixed;
   right: 20px;
@@ -55,12 +39,24 @@ header.active .gnb-inner{
   opacity: 0;
   transition: 0.5s;
 }
-.btn-top.active{
-  transform: translateY(0);
-  opacity: 1;
-}
 section p{
   font-size: 3em;
   color: #ddd;
   line-height: 2em;
+}
+
+/*  jQuery에서 클래스 생성 및 삭제  */
+header.active .lnb-inner{
+  display: none;
+  height: 0;
+  overflow: hidden;
+}
+header.active .gnb-inner{
+  background-color: #fff;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+.btn-top.active{
+  transform: translateY(0);
+  opacity: 1;
 }
